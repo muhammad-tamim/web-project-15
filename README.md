@@ -98,6 +98,44 @@ but you we reverse the full gradient then we got actual accepted gradient,
 ```
 ![line-clamp](assets/ScreenShots/line-clamp.png)
 
+5. When we use the same script file across multiple HTML pages, we must always check if an ID exists on the current page before accessing it. For example, an ID that exists in index.html might not exist in discover-something-new.html. If we try to access it directly, then we will get error, because js won't find the expected id in that page: 
+```js
+navigate("navigate-to-discover-something-new-page", "pages/discover-something-new.html")
+navigate("navigate-to-home-page", "../index.html")
+```
+```js
+function navigate(id, destination) {
+    document.getElementById(id).addEventListener("click", () => {
+        window.location.href = destination
+    })
+}
+```
+
+To solve this problem, we can use a condition.so, now the function only attaches the event listener if the element exists on that page, preventing errors when using the same script file across different pages.
+```js
+function navigate(id, destination) {
+    const element = document.getElementById(id);
+    if (element) {
+        document.getElementById(id).addEventListener("click", () => {
+            window.location.href = destination
+        })
+    }
+}
+```
+
+
+
+so , if we use a condtion to check if a id existi in that page then we accesed the element if not we dont acccess the element, then we got no error: 
+
+function navigate(id, destination) {
+    const element = document.getElementById(id);
+    if (element) {
+        document.getElementById(id).addEventListener("click", () => {
+            window.location.href = destination
+        })
+    }
+}
+
 ## Challenges I faced while Building This Project:
 
 
