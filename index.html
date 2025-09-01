@@ -34,6 +34,7 @@
             --color-primary: #3752FD;
             --color-primary-content: #00303C;
             --color-secondary: #F4F7FF;
+            --color-secondary-content: rgba(0, 0, 0, 0.5);
         }
     </style>
 </head>
@@ -96,7 +97,137 @@
             <hr class="hidden xl:block border my-8 border-dashed border-[#3752FD]/20">
 
             <!-- Main content -->
-            <section></section>
+            <section class="grid lg:grid-cols-2 xl:grid-cols-3 gap-9 mt-6 xl:mt-0">
+                <!-- cards -->
+
+                <div class="bg-secondary rounded-2xl p-6">
+                    <div class="space-y-4">
+                        <p class="inline-block py-2 px-4 bg-white rounded-lg">Frontend</p>
+                        <h2 class="text-2xl font-medium">Fix Navbar</h2>
+                        <div class="bg-white p-4 rounded-lg text-secondary-content">
+                            <p class="line-clamp-2">
+                                Debug mobile navigation menu using Chrome DevTools, check for overlapping items, and
+                                ensure toggle works on all breakpoints.
+                            </p>
+                        </div>
+                    </div>
+                    <hr class="border my-3 border-dashed border-[#3752FD]/20">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-sm text-secondary-content">Deadline</p>
+                            <p class="font-medium">05 Sept 2025</p>
+                        </div>
+                        <div><button class="btn btn-primary text-white">Completed</button></div>
+                    </div>
+                </div>
+
+                <div class="bg-secondary rounded-2xl p-6">
+                    <div class="space-y-4">
+                        <p class="inline-block py-2 px-4 bg-white rounded-lg">Backend</p>
+                        <h2 class="text-2xl font-medium">API Error Handling</h2>
+                        <div class="bg-white p-4 rounded-lg text-secondary-content">
+                            <p class="line-clamp-2">
+                                Add proper error messages and status codes for failed login attempts, expired tokens,
+                                and missing resources.
+                            </p>
+                        </div>
+                    </div>
+                    <hr class="border my-3 border-dashed border-[#3752FD]/20">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-sm text-secondary-content">Deadline</p>
+                            <p class="font-medium">07 Sept 2025</p>
+                        </div>
+                        <div><button class="btn btn-primary text-white">Completed</button></div>
+                    </div>
+                </div>
+
+                <div class="bg-secondary rounded-2xl p-6">
+                    <div class="space-y-4">
+                        <p class="inline-block py-2 px-4 bg-white rounded-lg">UI/UX</p>
+                        <h2 class="text-2xl font-medium">Redesign Dashboard</h2>
+                        <div class="bg-white p-4 rounded-lg text-secondary-content">
+                            <p class="line-clamp-2">
+                                Improve card layout, adjust spacing, and use consistent typography for better
+                                readability on the dashboard.
+                            </p>
+                        </div>
+                    </div>
+                    <hr class="border my-3 border-dashed border-[#3752FD]/20">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-sm text-secondary-content">Deadline</p>
+                            <p class="font-medium">10 Sept 2025</p>
+                        </div>
+                        <div><button class="btn btn-primary text-white">Completed</button></div>
+                    </div>
+                </div>
+
+                <div class="bg-secondary rounded-2xl p-6">
+                    <div class="space-y-4">
+                        <p class="inline-block py-2 px-4 bg-white rounded-lg">DevOps</p>
+                        <h2 class="text-2xl font-medium">Setup CI/CD Pipeline</h2>
+                        <div class="bg-white p-4 rounded-lg text-secondary-content">
+                            <p class="line-clamp-2">
+                                Configure GitHub Actions for automated Completed and deployment to staging before
+                                merging
+                                pull requests.
+                            </p>
+                        </div>
+                    </div>
+                    <hr class="border my-3 border-dashed border-[#3752FD]/20">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-sm text-secondary-content">Deadline</p>
+                            <p class="font-medium">12 Sept 2025</p>
+                        </div>
+                        <div><button class="btn btn-primary text-white">Completed</button></div>
+                    </div>
+                </div>
+
+                <div class="bg-secondary rounded-2xl p-6">
+                    <div class="space-y-4">
+                        <p class="inline-block py-2 px-4 bg-white rounded-lg">Completed</p>
+                        <h2 class="text-2xl font-medium">Write Unit Tests</h2>
+                        <div class="bg-white p-4 rounded-lg text-secondary-content">
+                            <p class="line-clamp-2">
+                                Add Jest tests for authentication functions, covering edge cases like invalid
+                                credentials and token refresh.
+                            </p>
+                        </div>
+                    </div>
+                    <hr class="border my-3 border-dashed border-[#3752FD]/20">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-sm text-secondary-content">Deadline</p>
+                            <p class="font-medium">14 Sept 2025</p>
+                        </div>
+                        <div><button class="btn btn-primary text-white">Completed</button></div>
+                    </div>
+                </div>
+
+                <div class="bg-secondary rounded-2xl p-6">
+                    <div class="space-y-4">
+                        <p class="inline-block py-2 px-4 bg-white rounded-lg">Database</p>
+                        <h2 class="text-2xl font-medium">Optimize Queries</h2>
+                        <div class="bg-white p-4 rounded-lg text-secondary-content">
+                            <p class="line-clamp-2">
+                                Add missing indexes, reduce redundant joins, and test query performance for user
+                                analytics dashboard.
+                            </p>
+                        </div>
+                    </div>
+                    <hr class="border my-3 border-dashed border-[#3752FD]/20">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-sm text-secondary-content">Deadline</p>
+                            <p class="font-medium">18 Sept 2025</p>
+                        </div>
+                        <div><button class="btn btn-primary text-white">Completed</button></div>
+                    </div>
+                </div>
+
+            </section>
         </section>
         <section class="md:col-span-3 min-h-screen w-full bg-white rounded-2xl p-3 md:p-6"></section>
     </main>
