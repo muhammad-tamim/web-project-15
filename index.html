@@ -62,7 +62,9 @@
     </header>
 
     <main
-        class="max-w-screen-2xl mx-auto py-6 px-2 md:px-6 md:grid md:grid-cols-12 gap-6 space-y-6 md:space-y-0 text-primary-content">
+        class="max-w-screen-2xl mx-auto py-6 px-2 lg:px-6 lg:grid lg:grid-cols-12 gap-6 space-y-6 lg:space-y-0 text-primary-content">
+
+        <!-- Task section -->
         <section class="md:col-span-9 min-h-screen w-full bg-white rounded-2xl p-3 md:p-6">
             <!-- Main content header-->
             <section class="xl:grid xl:grid-cols-12 space-y-6 xl:space-y-0">
@@ -229,7 +231,28 @@
 
             </section>
         </section>
-        <section class="md:col-span-3 min-h-screen w-full bg-white rounded-2xl p-3 md:p-6"></section>
+
+        <!-- activity Log section -->
+        <section class="md:col-span-3 min-h-screen w-full bg-white rounded-2xl p-3 md:p-6">
+
+            <section class="text-center space-y-4">
+                <div class="flex items-center gap-4 justify-center">
+                    <img src="assets/images/activity.png" alt="activity image">
+                    <h2 class="font-medium text-xl">Activity Log</h2>
+                </div>
+                <div><button class="btn btn-primary text-white">Clear History</button></div>
+            </section>
+
+            <hr class="border mt-4 mb-6 border-dashed border-[#3752FD]/20">
+
+            <!-- Dynamically content container -->
+            <section class="space-y-7">
+                <p class="bg-secondary rounded-lg p-2.5">You have Complete The Task Add Dark Mode at 12:48:15 PM
+                </p>
+                <p class="bg-secondary rounded-lg p-2.5">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+            </section>
+        </section>
+
     </main>
 
     <footer class="max-w-screen-2xl mx-auto py-6 px-2 md:px-6">
