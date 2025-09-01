@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2188e87f2e.js" crossorigin="anonymous"></script>
+
+    <!-- Customize Tailwind CSS -->
+    <style type="text/tailwindcss">
+        @theme {
+      --font-poppins: "Poppins", sans-serif;
+    }
+  </style>
+
+    <!-- Customize DaisyUI colors -->
+    <style>
+        :root {
+            --color-primary: #3752FD;
+            --color-primary-content: #00303C;
+            --color-secondary: #F4F7FF;
+            --color-secondary-content: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body class="font-poppins bg-secondary">
+    <header class="max-w-screen-2xl mx-auto py-6 px-2 md:px-6">
+        <section class="bg-white rounded-2xl p-3 md:p-6 flex justify-between items-center text-primary-content">
+            <div class="flex items-center gap-3">
+                <div>
+                    <img class="size-9 md:size-12" src="../assets/images/logo.png" alt="logo">
+                </div>
+                <h1 class="text-xl md:text-4xl font-light">dev<span class="font-bold">Board</span></h1>
+            </div>
+            <div class="flex gap-4 md:gap-9 items-center">
+                <div class="flex gap-2 md:gap-5 items-center bg-secondary rounded-[32px] p-2 md:p-4">
+                    <div><img class="size-5 md:size-8" src="../assets/images/checkbox.png" alt="checkbox"></div>
+                    <h1 class="text-xl md:text-3xl font-bold">23</h1>
+                </div>
+                <div class="bg-secondary p-2 md:p-3 rounded-full flex">
+                    <button class="cursor-pointer "><img class="size-7 md:size-10" src="../assets/images/theme-btn.png"
+                            alt="theme-button"></button>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main class="max-w-screen-2xl mx-auto py-6 px-6 text-primary-content">
+
+        <!-- Discover something new section -->
+        <section class="bg-white rounded-2xl md:p-6">
+            <div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
+
+                <!-- Featured article -->
+                <a rel="noopener noreferrer" href="#"
+                    class="block bg-secondary max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12">
+                    <img src="https://algocademy.com/blog/wp-content/uploads/2024/10/compressed_image-946-1024x585.webp"
+                        alt="Developer learning" class="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7">
+                    <div class="p-6 space-y-2 lg:col-span-5">
+                        <h3 class="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">
+                            Master Debugging Like a Pro</h3>
+                        <span class="text-xs text-gray-500">August 28, 2025</span>
+                        <p>Learn how to use Chrome DevTools effectively to identify layout issues, performance
+                            bottlenecks,
+                            and JavaScript errors faster than ever.</p>
+                    </div>
+                </a>
+
+                <!-- Grid of cards -->
+                <div class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+                    <a rel="noopener noreferrer" href="#"
+                        class="max-w-sm bg-secondary mx-auto group hover:no-underline focus:no-underline">
+                        <img role="presentation" class="object-cover w-full rounded h-44"
+                            src="https://miro.medium.com/v2/resize:fit:1400/1*dkTx2dAuuh3ndlDwKxcisw.jpeg">
+                        <div class="p-6 space-y-2">
+                            <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline">Explore New
+                                APIs</h3>
+                            <span class="text-xs text-gray-500">August 20, 2025</span>
+                            <p>Discover the latest public APIs for developers, from AI assistants to weather
+                                forecasting,
+                                and integrate them into your projects.</p>
+                        </div>
+                    </a>
+
+                    <a rel="noopener noreferrer" href="#"
+                        class="max-w-sm bg-secondary mx-auto group hover:no-underline focus:no-underline">
+                        <img role="presentation" class="object-cover w-full rounded h-44"
+                            src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200914221215/Top-5-Reasons-to-Contribute-to-Open-Source-Project.png">
+                        <div class="p-6 space-y-2">
+                            <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline">Contribute to
+                                Open Source</h3>
+                            <span class="text-xs text-gray-500">August 21, 2025</span>
+                            <p>Join beginner-friendly GitHub repositories, improve documentation, or submit your first
+                                pull
+                                request to the community.</p>
+                        </div>
+                    </a>
+
+                    <a rel="noopener noreferrer" href="#"
+                        class="max-w-sm bg-secondary mx-auto group hover:no-underline focus:no-underline">
+                        <img role="presentation" class="object-cover w-full rounded h-44"
+                            src="https://db0dce98.rocketcdn.me/en/files/2024/04/ki-dev.jpg">
+                        <div class="p-6 space-y-2">
+                            <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline">AI for
+                                Developers</h3>
+                            <span class="text-xs text-gray-500">August 22, 2025</span>
+                            <p>Experiment with AI-powered coding tools, learn prompt engineering, and automate tasks to
+                                boost
+                                productivity.</p>
+                        </div>
+                    </a>
+
+                    <a rel="noopener noreferrer" href="#"
+                        class="max-w-sm bg-secondary mx-auto group hover:no-underline focus:no-underline hidden sm:block">
+                        <img role="presentation" class="object-cover w-full rounded h-44"
+                            src="https://img.freepik.com/free-vector/gradient-ui-ux-elements_23-2149057419.jpg?semt=ais_hybrid&w=740&q=80">
+                        <div class="p-6 space-y-2">
+                            <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline">Modern UI
+                                Patterns</h3>
+                            <span class="text-xs text-gray-500">August 23, 2025</span>
+                            <p>Stay updated with trending UI/UX patterns, responsive layouts, and accessible components
+                                for
+                                real-world apps.</p>
+                        </div>
+                    </a>
+
+                    <a rel="noopener noreferrer" href="#"
+                        class="max-w-sm bg-secondary mx-auto group hover:no-underline focus:no-underline hidden sm:block">
+                        <img role="presentation" class="object-cover w-full rounded h-44"
+                            src="https://blog.vault-erp.com/image.axd?picture=/Productivity/Vault_Boost_Blog_900x600px_01.png">
+                        <div class="p-6 space-y-2">
+                            <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline">Boost
+                                Productivity</h3>
+                            <span class="text-xs text-gray-500">August 24, 2025</span>
+                            <p>Learn shortcuts, automation tricks, and focus techniques to get more done in less time
+                                while
+                                coding.</p>
+                        </div>
+                    </a>
+
+                    <a rel="noopener noreferrer" href="#"
+                        class="max-w-sm bg-secondary mx-auto group hover:no-underline focus:no-underline hidden sm:block">
+                        <img role="presentation" class="object-cover w-full rounded h-44"
+                            src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191223194621/Top-10-Technology-Trends-That-You-Can-Learn-in-2020.png">
+                        <div class="p-6 space-y-2">
+                            <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline">Trending Tech
+                            </h3>
+                            <span class="text-xs text-gray-500">August 25, 2025</span>
+                            <p>Discover the hottest new frameworks, libraries, and dev tools shaping the future of
+                                software
+                                development.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Load more button -->
+                <div class="flex justify-center">
+                    <button type="button" class="btn btn-primary text-white">Load more
+                        posts...</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="max-w-screen-2xl mx-auto py-6 px-2 md:px-6">
+        <section class="bg-white rounded-2xl p-3 md:p-6">
+            <h1 class="text-center text-sm  md:text-2xl">&copy; 2025 DevBoard. All rights reserved.</h1>
+        </section>
+    </footer>
+</body>
+
+</html>
