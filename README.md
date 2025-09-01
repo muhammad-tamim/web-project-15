@@ -87,6 +87,17 @@ but you we reverse the full gradient then we got actual accepted gradient,
 ```
 ![12-column-gird](assets/ScreenShots/12-coloum-gird.png) 
 
+4. How to use line clamp in tailwind css:
+```html 
+<div class=" bg-white p-4 rounded-lg text-black/50">
+    <p class="line-clamp-3">Debug
+        using Chrome
+        DevTools, check for overlapping elements, and ensure onClick works properly
+        and ensure onClick works properly</p>
+</div>
+```
+![line-clamp](assets/ScreenShots/line-clamp.png)
+
 ## Challenges I faced while Building This Project:
 
 
