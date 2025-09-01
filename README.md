@@ -26,7 +26,66 @@
         }
     </style>
 ```  
+2. If i want this liner gradient using tailwind css,  
+   
+![content-header-gradient1](assets/ScreenShots/content-header-gradient1.png)
+![content-header-gradient2](assets/ScreenShots/content-header-gradient2.png)
 
+and if i write the tailwind classes like this, then we got opposite gradient, 
+```html
+       <div
+                    class="flex gap-5 items-center bg-gradient-to-tl from-[#3752FD] from-0% via-[#6C7FFA] via-53% to-[#9BA8F8] to-100% p-8 rounded-xl">
+                    <div><img class="size-[79px]" src="assets/images/board.png" alt="checkbox">
+                    </div>
+                    <p class="text-2xl font-medium text-white">Discover Something<br>New Today!</p>
+                </div>
+``` 
+![content-header-gradient4](assets/ScreenShots/content-header-gradient4.png)
+
+but you we reverse the full gradient then we got actual accepted gradient,   
+```html
+                <div
+                    class="flex gap-5 items-center bg-gradient-to-tl from-[#9BA8F8] from-0% via-[#6C7FFA] via-53% to-[#3752FD] to-100% p-8 rounded-xl">
+                    <div><img class="size-[79px]" src="assets/images/board.png" alt="checkbox">
+                    </div>
+                    <p class="text-2xl font-medium text-white">Discover Something<br>New Today!</p>
+                </div>
+```
+![content-header-gradient3](assets/ScreenShots/content-header-gradient3.png)  
+
+3. How to use 12 column grid system properly. 
+
+```html
+  <section class="grid grid-cols-12">
+                <div class="col-span-3 flex gap-5 items-center bg-secondary p-8 rounded-xl">
+                    <div class="rounded-full p-4 bg-white"><img class="size-7" src="assets/images/checkbox.png"
+                            alt="checkbox">
+                    </div>
+                    <div>
+                        <p class="font-medium">Task Assigned</p>
+                        <h1 class="font-bold text-3xl">05</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="col-span-6 mx-6 flex gap-5 items-center bg-gradient-to-tl from-[#9BA8F8] from-0% via-[#6C7FFA] via-53% to-[#3752FD] to-100% p-8 rounded-xl">
+                    <div><img class="size-[79px]" src="assets/images/board.png" alt="checkbox">
+                    </div>
+                    <p class="text-2xl font-medium text-white">Discover Something<br>New Today!</p>
+                </div>
+
+                <div class="col-span-3 flex gap-5 items-center bg-secondary p-8 rounded-xl">
+                    <div class="rounded-full p-4 bg-white"><img class="size-7" src="assets/images/calender.png"
+                            alt="checkbox">
+                    </div>
+                    <div>
+                        <p class="font-medium text-xl">Wed,</p>
+                        <h1 class="font-bold text-xl">Jul 28 2025</h1>
+                    </div>
+                </div>
+            </section> 
+```
+![12-column-gird](assets/ScreenShots/12-coloum-gird.png) 
 
 ## Challenges I faced while Building This Project:
 
