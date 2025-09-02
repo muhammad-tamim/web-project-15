@@ -23,7 +23,7 @@ function getDateOrTime(value) {
         const time = dateAndTime.toLocaleTimeString();
         return time;
     }
-
-
-    console.log(time)
 }
+
+
+

@@ -119,7 +119,7 @@
                             <p class="text-sm text-secondary-content">Deadline</p>
                             <p class="font-medium">05 Sept 2025</p>
                         </div>
-                        <div><button class="btn btn-primary text-white">Completed</button></div>
+                        <div><button class="task-completed-btn btn btn-primary text-white">Completed</button></div>
                     </div>
                 </div>
 
@@ -140,7 +140,7 @@
                             <p class="text-sm text-secondary-content">Deadline</p>
                             <p class="font-medium">07 Sept 2025</p>
                         </div>
-                        <div><button class="btn btn-primary text-white">Completed</button></div>
+                        <div><button class="task-completed-btn btn btn-primary text-white">Completed</button></div>
                     </div>
                 </div>
 
@@ -161,7 +161,7 @@
                             <p class="text-sm text-secondary-content">Deadline</p>
                             <p class="font-medium">10 Sept 2025</p>
                         </div>
-                        <div><button class="btn btn-primary text-white">Completed</button></div>
+                        <div><button class="task-completed-btn btn btn-primary text-white">Completed</button></div>
                     </div>
                 </div>
 
@@ -183,7 +183,7 @@
                             <p class="text-sm text-secondary-content">Deadline</p>
                             <p class="font-medium">12 Sept 2025</p>
                         </div>
-                        <div><button class="btn btn-primary text-white">Completed</button></div>
+                        <div><button class="task-completed-btn btn btn-primary text-white">Completed</button></div>
                     </div>
                 </div>
 
@@ -204,7 +204,7 @@
                             <p class="text-sm text-secondary-content">Deadline</p>
                             <p class="font-medium">14 Sept 2025</p>
                         </div>
-                        <div><button class="btn btn-primary text-white">Completed</button></div>
+                        <div><button class="task-completed-btn btn btn-primary text-white">Completed</button></div>
                     </div>
                 </div>
 
@@ -225,7 +225,7 @@
                             <p class="text-sm text-secondary-content">Deadline</p>
                             <p class="font-medium">18 Sept 2025</p>
                         </div>
-                        <div><button class="btn btn-primary text-white">Completed</button></div>
+                        <div><button class="task-completed-btn btn btn-primary text-white">Completed</button></div>
                     </div>
                 </div>
 
@@ -240,16 +240,13 @@
                     <img src="assets/images/activity.png" alt="activity image">
                     <h2 class="font-medium text-xl">Activity Log</h2>
                 </div>
-                <div><button class="btn btn-primary text-white">Clear History</button></div>
+                <div><button id="clear-history-btn" class="btn btn-primary text-white">Clear History</button></div>
             </section>
 
             <hr class="border mt-4 mb-6 border-dashed border-[#3752FD]/20">
 
             <!-- Dynamically content container -->
-            <section class="space-y-7">
-                <p class="bg-secondary rounded-lg p-2.5">You have Complete The Task Add Dark Mode at 12:48:15 PM
-                </p>
-                <p class="bg-secondary rounded-lg p-2.5">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+            <section id="completed-task-container" class="space-y-7">
             </section>
         </section>
 
@@ -265,6 +262,7 @@
     <script src="scripts/pageNavigation.js"></script>
     <script src="scripts/toggleBackgroundColor.js"></script>
     <script src="scripts/setCurrentDate.js"></script>
+    <script src="scripts/taskComplete.js"></script>
 </body>
 
 </html>
