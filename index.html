@@ -39,7 +39,7 @@
     </style>
 </head>
 
-<body class="font-poppins bg-secondary">
+<body id="body" class="font-poppins bg-secondary">
     <header class="max-w-screen-2xl mx-auto py-6 px-2 md:px-6">
         <section class="bg-white rounded-2xl p-3 md:p-6 flex justify-between items-center text-primary-content">
             <div class="flex items-center gap-3">
@@ -54,8 +54,8 @@
                     <h1 class="text-xl md:text-3xl font-bold">23</h1>
                 </div>
                 <div class="bg-secondary p-2 md:p-3 rounded-full flex">
-                    <button class="cursor-pointer "><img class="size-7 md:size-10" src="assets/images/theme-btn.png"
-                            alt="theme-button"></button>
+                    <button class="cursor-pointer" id="theme-toggle-btn"><img class="size-7 md:size-10"
+                            src="assets/images/theme-btn.png" alt="theme-button"></button>
                 </div>
             </div>
         </section>
@@ -263,6 +263,7 @@
 
     <script src="utilities/utilities.js"></script>
     <script src="scripts/pageNavigation.js"></script>
+    <script src="scripts/toggleBackgroundColor.js"></script>
 </body>
 
 </html>

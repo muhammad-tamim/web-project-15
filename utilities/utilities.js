@@ -6,3 +6,10 @@ function navigate(id, destination) {
         })
     }
 }
+
+function getRandomHexColor() {
+    const hex = Math.floor(Math.random() * 0xffffff).toString(16); // convert to hex
+    return `#${hex.padStart(6, "0")}`;
+}
+
+
