@@ -1,15 +1,20 @@
 const buttons = document.getElementsByClassName("task-completed-btn");
 const taskNumber = document.getElementById("task-number").innerText;
+const taskFinished = document.getElementById("task-finished").innerText;
 let integerTaskNumber = parseInt(taskNumber);
+let integerTaskFinished = parseInt(taskFinished);
 
-let num = integerTaskNumber;
+let pendingNum = integerTaskNumber;
+let finishednum = integerTaskFinished;
 
 for (let button of buttons) {
     button.addEventListener("click", () => {
 
-        // when click task number will be reduce
-        num--;
-        document.getElementById("task-number").innerText = num;
+        // when click pending task number will be reduce and finished task number will be increase 
+        pendingNum--;
+        document.getElementById("task-number").innerText = pendingNum;
+        finishednum++;
+        document.getElementById("task-finished").innerText = finishednum;
 
         // when reduce a alert show
         alert("Board Update Successfully!")
