@@ -12,4 +12,18 @@ function getRandomHexColor() {
     return `#${hex.padStart(6, "0")}`;
 }
 
+function getDateOrTime(value) {
+    const dateAndTime = new Date();
+    if (value === "date") {
+        const date = dateAndTime.toDateString();
+        const dateArray = date.split(" ");
+        return dateArray;
+    }
+    else {
+        const time = dateAndTime.toLocaleTimeString();
+        return time;
+    }
 
+
+    console.log(time)
+}
