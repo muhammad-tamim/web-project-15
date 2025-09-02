@@ -6,7 +6,8 @@ DevBoard is a Task Manageent website built with HTML, Tailwind CSS, DaisyUI and 
 
 **Key Features:**
 - I can see how many task are pending
-- See real-time task count in the task header.
+- See real-time task count.
+- random colors backgrund theme toggle.
 - if i press the compleet task button: 
   - The task count decreases automatically.
   - A confirmation modal appears.
