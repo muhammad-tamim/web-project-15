@@ -22,6 +22,8 @@ https://web-project-15.netlify.app/
 
 ## Project Video:
 
+https://github.com/user-attachments/assets/e10a707c-be90-4b16-8bb0-1056ca7f11e3
+
 ## What I Learned New while Building This Project:
 
 1. How to customization tailwind CSS and DaisyUI:  
